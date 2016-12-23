@@ -1,0 +1,2 @@
+# monetizethis
+Innovative monetization algorithm
