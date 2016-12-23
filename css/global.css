@@ -1,0 +1,300 @@
+/* CSS Reset */
+/* line 1, global.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 1, global.scss */
+body {
+  line-height: 1; }
+
+/* line 1, global.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, main, nav, section {
+  display: block; }
+
+/* line 1, global.scss */
+nav ul {
+  list-style: none; }
+
+/* line 1, global.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 1, global.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+/* line 1, global.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 1, global.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* line 1, global.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 1, global.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 1, global.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+/* line 1, global.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+
+/* line 1, global.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 1, global.scss */
+input, select {
+  vertical-align: middle; }
+
+/* line 1, global.scss */
+img, table, figure, iframe {
+  max-width: 100%; }
+
+/* line 1, global.scss */
+ul {
+  list-style: none; }
+
+/* line 1, global.scss */
+strong {
+  font-weight: bold; }
+
+/* Clearfix */
+/* line 2, global.scss */
+.clearfix:after, .wrap:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ".";
+  clear: both;
+  height: 0; }
+
+/* line 2, global.scss */
+* html .clearfix, * html .wrap {
+  zoom: 1; }
+
+/* line 2, global.scss */
+*:first-child + html .clearfix, *:first-child + html .wrap {
+  zoom: 1; }
+
+/* Natural box model */
+/* line 3, global.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Colours */
+/* Mixins */
+/* Universal Styles */
+/* line 24, global.scss */
+body {
+  font-family: oswald, 'helvetica condensed', 'arial narrow', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  background: #F4E941;
+  color: #142B3D; }
+
+/* line 31, global.scss */
+a {
+  color: #CB6705; }
+
+/* line 34, global.scss */
+p ~ p,
+p ~ canvas {
+  margin-top: 1.6em; }
+
+/* line 39, global.scss */
+header,
+main {
+  max-width: 50rem;
+  margin: 0 auto; }
+
+/* line 45, global.scss */
+header {
+  text-transform: uppercase;
+  font-size: 5rem;
+  line-height: 1.2;
+  padding: 2rem 1rem 3rem; }
+  /* line 51, global.scss */
+  header h1 {
+    font-weight: bold;
+    letter-spacing: 0.05em; }
+    /* line 54, global.scss */
+    header h1 a {
+      text-decoration: none;
+      display: inline-block;
+      color: #F4E941;
+      background: #CB6705;
+      padding: 0.5rem 1rem; }
+      /* line 61, global.scss */
+      header h1 a:hover, header h1 a:focus, header h1 a:active {
+        background: #994e04; }
+
+/* line 70, global.scss */
+main {
+  padding: 0 1rem 3rem; }
+
+/* Home page */
+/* line 75, global.scss */
+.home section {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 0.2rem; }
+  /* line 82, global.scss */
+  .home section img {
+    display: block;
+    border-radius: 10rem;
+    width: 10rem;
+    margin: 0 auto 1rem; }
+  @media (min-width: 30rem) {
+    /* line 89, global.scss */
+    .home section img {
+      float: left; }
+    /* line 92, global.scss */
+    .home section p {
+      margin-left: 11rem; } }
+
+/* line 98, global.scss */
+.home form {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 0; }
+  /* line 104, global.scss */
+  .home form input {
+    height: 3rem;
+    font-size: 1.5rem;
+    font-family: oswald, 'helvetica condensed', 'arial narrow', sans-serif;
+    border-radius: 0.2rem; }
+  /* line 110, global.scss */
+  .home form input[type="text"] {
+    width: 68%;
+    margin-right: 2%;
+    padding-left: 0.5rem;
+    background: white;
+    border: 2px solid #CB6705;
+    color: #142B3D; }
+    /* line 118, global.scss */
+    .home form input[type="text"]:focus {
+      outline: none;
+      background: #EEE; }
+  /* line 123, global.scss */
+  .home form input[type="submit"] {
+    width: 30%;
+    background-color: #142B3D;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#214663), to(#142B3D));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #214663, #142B3D);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, #214663, #142B3D);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #214663, #142B3D);
+    /* IE10 */
+    background-image: -o-linear-gradient(top, #214663, #142B3D);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, #214663, #142B3D);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#214663', EndColorStr='#142B3D');
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #142B3D; }
+    /* line 131, global.scss */
+    .home form input[type="submit"]:active {
+      padding: 0;
+      background-color: #214663;
+      /* Fallback Color */
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#142B3D), to(#214663));
+      /* Saf4+, Chrome */
+      background-image: -webkit-linear-gradient(top, #142B3D, #214663);
+      /* Chrome 10+, Saf5.1+, iOS 5+ */
+      background-image: -moz-linear-gradient(top, #142B3D, #214663);
+      /* FF3.6 */
+      background-image: -ms-linear-gradient(top, #142B3D, #214663);
+      /* IE10 */
+      background-image: -o-linear-gradient(top, #142B3D, #214663);
+      /* Opera 11.10+ */
+      background-image: linear-gradient(top, #142B3D, #214663);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#142B3D', EndColorStr='#214663'); }
+
+/* line 138, global.scss */
+.ideas {
+  border-top: 0.2rem solid rgba(20, 43, 61, 0.3);
+  border-bottom: 0.2rem solid rgba(20, 43, 61, 0.3);
+  padding: 0.5rem 0;
+  margin-top: 3rem; }
+
+/* Images page */
+/* line 147, global.scss */
+.images ul {
+  font-size: 0;
+  margin: 1rem 0; }
+  /* line 151, global.scss */
+  .images ul li {
+    display: inline-block;
+    width: 33%;
+    padding: 0.5rem; }
+    /* line 156, global.scss */
+    .images ul li:hover {
+      background: #CB6705; }
+    /* line 160, global.scss */
+    .images ul li input[type="image"] {
+      width: 100%; }
+  @media (max-width: 40rem) {
+    /* line 166, global.scss */
+    .images ul li {
+      width: 50%; } }
+  /* line 171, global.scss */
+  .images ul + p {
+    text-align: center; }
+
+/* Monet page */
+/* line 178, global.scss */
+.monet #canvas {
+  display: none; }
+
+/* line 181, global.scss */
+.monet #dest-canvas {
+  width: 100%; }
+
+/* line 185, global.scss */
+#loading {
+  text-align: center; }
+
+/*# sourceMappingURL=global.css.map */
